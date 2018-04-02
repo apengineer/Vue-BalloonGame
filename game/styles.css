@@ -1,0 +1,22 @@
+#balloon {
+  background: url("img/deflatedBalloon.jpg") center no-repeat;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+#balloon.inflated{
+  background: url("img/inflatedBalloon.jpg") center no-repeat;
+}
+#progress{
+  width:400px;
+  border: 5px solid;
+  margin: 0 auto 20px auto;
+}
+#progress div{
+  height: 20px;
+  background: green;
+}
+#controls {
+    width: 120px;
+    margin: 0 auto;
+}

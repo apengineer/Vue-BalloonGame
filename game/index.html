@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>VueJS - Computed Properties</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <div id="v-game">
+    <h1> Blow the balloon</h1>
+
+    <!-- balloon image -->
+    <div id="balloon" v-bind:class="{inflated: isGameFinished}"></div>
+
+
+    <!-- progress bar  -->
+    <div id="progress">
+      <div v-bind:style="{width : progress + '%'}"></div>
+    </div>
+
+    <!-- button controls -->
+    <div id="controls">
+      <button v-on:click="blow" v-show="!isGameFinished">Blow</button>
+      <button v-on:click="restart">Restart</button>
+    </div>
+
+
+    <script src="app.js"></script>
+  </div>
+</body>
+
+</html>
